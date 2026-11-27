@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica HTML Mamadou Barry</title>
+
+    <style>
+      #topHeader {
+        background-color: brown;
+        font-size: 3em;
+        color: white;
+      }
+      .movieTitle {
+        font-size: 2em;
+        color: brown;
+        border: 1px solid brown;
+        padding-left: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p id="topHeader">📚 VIDEOTECA DEL INSTITUTO</p>
+      <nav>
+        <a href="#catalogo">Catálogo</a> ·
+        <a href="#horario">Horario</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Índice</h1>
+      <ol>
+        <li><a href="#dune">Dune</a></li>
+        <li><a href="#matilda">Matilda</a></li>
+        <li><a href="#bohemianrhapsody">Bohemian rhapsody</a></li>
+      </ol>
+      <article>
+        <h2 class="movieTitle">Dune</h2>
+        <p>La nueva película ya está disponible</p>
+        <p>
+          <img
+            src="imagenes/dune-portada.jpg"
+            alt="Foto de Dune"
+            width="200"
+            height="300"
+          />
+        </p>
+      </article>
+      <article>
+        <h2 class="movieTitle">Matilda</h2>
+        <p>Dos ejemplares nuevos en la sección infantil.</p>
+        <p>
+          <img
+            src="imagenes/matilde-portada.jpg"
+            alt="Foto de Matilda"
+            width="200"
+            height="300"
+          />
+        </p>
+      </article>
+      <article>
+        <h2 class="movieTitle">Bohemian rhapsody</h2>
+        <p>Disfruta de la música y la carrera de Queen</p>
+        <iframe
+          width="400"
+          height="225"
+          src="https://www.youtube.com/embed/UiOYxLrKYYc"
+          title="Vídeo de YouTube"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <aside>
+        <h2>¿Sabías que...?</h2>
+        <p>Puedes renovar un préstamo dos veces.</p>
+        <p>IES Islas Filipinas · Abierto de 8:30 a 14:30</p>
+        <form>
+          <label for="correo"><b>Suscríbete </b> Email:</label>
+          <input type="email" id="correo" name="correo" required />
+          <input type="submit" value="Enviar" />
+        </form>
+      </aside>
+    </main>
+  </body>
+</html>
